@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <>
       <div>
-        <nav className="flex items-center my-3 justify-between">
+        <nav className="flex items-center my-3 justify-between px-10">
           <section>
             <Image src={Logo} alt="abroad sathi" height={45} width={45} />
           </section>

@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 //comp and image imports
-import underlinetwo from '@/Images/underline_two.png';
+import underlinetwo from '@/Images/underline_two.svg';
 
 export default function Weprovide(){
     return(

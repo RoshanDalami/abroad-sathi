@@ -6,7 +6,7 @@ import underline from '@/Images/underline.png'
 
 export default function Hero() {
   return (
-    <div className="flex items-center mt-16 px-10 mx-10">
+    <div className="flex items-center mt-16 px-20 mx-10">
       <section>
         <h1 className="text-[52px] font-light text-[#3D3D3D]">
           Your 
