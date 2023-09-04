@@ -11,7 +11,7 @@ export default function AboutBanner(){
     return(
         <div className=" bg-[#0149A5] mx-10 mb-10 p-16 mt-10 flex gap-4 flex-col ">
             <section className="">
-            <Image src={underlinetwo} alt='underline' className='absolute ml-[550px] mt-[42px]'/>
+            <Image src={underlinetwo} alt='underline' className='absolute ml-[550px] mt-[42px] hidden md:inline  '/>
             <h1 className="text-center text-[40px] font-semibold text-white">
 
             ABOUT US

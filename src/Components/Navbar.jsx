@@ -64,7 +64,7 @@ export default function Navbar() {
         </nav>
         {
           isMobile ?
-        <div className="flex flex-col gap-4 items-end p-4 ">
+        <div className="flex flex-col gap-4 items-end px-10 justify-center ">
         <ul className="flex flex-col gap-7 text-[#0F42AB]">
               {[
                 ["HOME",onHomeClick ],

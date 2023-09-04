@@ -44,7 +44,7 @@ export default function GetInTouch() {
           We would love to hear from you.
         </p>
 
-        <form className="text-[#3D3D3D] flex flex-col gap-6 items-center ">
+        <form className="text-[#3D3D3D] flex flex-col gap-6  ">
           <div className="flex gap-6 flex-col md:flex-row  ">
             <section className="flex flex-col w-[100%]">
               <label>First Name</label>
