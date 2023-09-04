@@ -7,7 +7,7 @@ import underline from '@/Images/underline_two.svg';
 
 export default function Undernewsletter(){
     return(
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between flex-wrap">
             <section className="w-[50%]">
                 <h1 className="text-[40px] font-bold text-[#3D3D3D]">UNLEASHING YOUR POTENTIAL</h1>
                 <Image src={underline} alt="underline svg" className="absolute ml-[480px] mt-[-20px]"/>
