@@ -4,7 +4,7 @@ import underline from '@/Images/underline_two.svg'
 
 export default function About(){
     return(
-        <div className="flex flex-col items-center justify-center px-8 md:px-20 gap-10 py-10 mt-20 ">
+        <div className="flex flex-col items-center justify-center px-8 md:px-20 gap-10 py-10 mt-12 ">
             <section>
 
             <h1 className="font-bold text-[#0149A5] text-[40px]">ABOUT US</h1>

@@ -14,7 +14,10 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
+      <div className=" bg-[#0149A5] md:mx-16 mt-8">
+
       <AboutBanner />
+      </div>
       <div id="services" >
 
       <Weprovide />
@@ -22,19 +25,19 @@ export default function Home() {
       <div className=" my-20 mx-10" >
         <CardCollection />
       </div>
-      <div className="p-10 bg-gradient-to-t from-[#0148a538] to-white" id="topdestination">
+      <div className="p-5 md:p-10 bg-gradient-to-t from-[#0148a538] to-white" id="topdestination">
         <Topdestination />
       </div>
-      <div className="px-14 py-16 hidden md:block">
+      <div className=" px-5 py-10 md:px-14 md:py-16  md:block">
         <Newsletter />
       </div>
-      <div className="px-14 py-10 hidden md:block ">
+      <div className=" px-10 md:px-14 py-10  md:block ">
         <Undernewsletter />
       </div>
-      <div className=" px-14 py-10 hidden md:block">
+      <div className=" px-14 py-10  md:block">
         <LearnMore />
       </div>
-      <div className=" px-14 py-10  ">
+      <div className=" md:px-14 md:py-10 mb-[-50px] md:mb-0 ">
         <GetInTouch />
       </div>
     </main>

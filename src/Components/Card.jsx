@@ -7,13 +7,13 @@ export default function Card({image,title,description,title2}){
                 <Image src={image} alt='image1'/>
             </section>
             <section>
-                <h1 className='text-[28px] text-[#3D3D3D] font-bold text-center mx-2 '>
+                <h1 className=' text-[24px] md:text-[28px] text-[#3D3D3D] font-bold text-center mx-2 '>
                     {title} <br></br>
                     {title2}
                 </h1>
             </section>
             <section>
-                <p className='text-center text-[20px] font-light mx-6'> 
+                <p className='text-center text-[16px] md:text-[20px] font-light mx-6'> 
               {description}
                 </p>
             </section>

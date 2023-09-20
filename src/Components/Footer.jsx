@@ -32,15 +32,15 @@ export default function Footer(){
     router.push('/contact')
   }
     return(
-        <div>
+        <div className=" -z-20">
 
-        <div className="bg-[#034AA4] flex flex-col md:flex-row items-center justify-center px-8 py-20 gap-20">
-            <section>
+        <div className="bg-[#034AA4] flex flex-col md:flex-row md:items-center justify-center px-8 py-20 gap-14 md:gap-20">
+            <section className="flex items-center justify-center">
             <Image src={footerlogo} alt="footer_logo" />
             </section>
 
 
-            <section className=" hidden md:block md:w-[25%]">
+            <section className="md:w-[25%]">
                 <p className="text-[16px] text-white">
                 Welcome to our educational consultancy, a dedicated organization committed to empowering students and educators. With personalized guidance, expert mentoring, and a comprehensive range of services, we unlock pathways to success, ensuring each individual&apos;s unique talents and ambitions thrive in an ever-changing world. Embrace the power of education and unlock your full potential with us.
                 </p>

@@ -7,6 +7,8 @@ import underline from '@/Images/underline_two.svg'
 
 export default function Newsletter(){
     return(
+        <>
+        <main className="hidden md:block">
         <div className="border-2 border-[#0149A5] rounded flex items-center justify-between flex-wrap">
             <section>
                 <Image src={newsletter} alt=""/>
@@ -33,5 +35,35 @@ export default function Newsletter(){
 
             </section>
         </div>
+        </main>
+        <main className="md:hidden">
+        <div className="border-2 border-[#0149A5] rounded flex items-center justify-between flex-wrap gap-8">
+            <section className="px-5">
+                <div className="mb-[20px]">
+                <h1 className="text-[28px] font-bold text-[#3D3D3D]" >SUBSCRIBE TO OUR NEWSLETTER
+                </h1>
+                    <Image src={underline} className="absolute ml-[50px] mt-[-10px] " alt="underline  "/>
+                </div>
+                <p className="text-[20px] text-[#3D3D3D] mb-6">
+                Subscribe to our newsletter and stay updated!
+                </p>
+                <form className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-1">
+                        <label className="text-[16px] font-light ">
+                            Email
+                        </label>
+                        <input type='email' className="border-2 border-black/30 rounded px-3 py-2 " placeholder="Email"/>
+                    </div>
+                    <button className="bg-[#0149A5] text-white font-normal py-[10px] rounded-md ">SUBSCRIBE</button>
+                </form>
+
+
+            </section>
+            <section>
+                <Image src={newsletter} alt=""/>
+            </section>
+        </div>
+        </main>
+        </>
     )
 }
