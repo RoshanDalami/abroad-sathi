@@ -51,7 +51,7 @@ export default function Topdestination() {
   ];
   return (
     <>
-      <main className="hidden md:hidden">
+      <main className="hidden md:block">
         <div className="flex flex-col items-center justify-center gap-10 my-10 flex-wrap  ">
           <section>
             <Image
@@ -97,7 +97,7 @@ export default function Topdestination() {
           </section>
         </div>
       </main>
-      <main className="">
+      <main className="md:hidden">
         <div className="flex flex-col items-center justify-center gap-10 my-10  ">
           <section>
             <Image
