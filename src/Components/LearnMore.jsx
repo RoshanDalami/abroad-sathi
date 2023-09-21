@@ -4,6 +4,7 @@ import Image from "next/image";
 //comps and Images imports
 import underline from "@/Images/underline_two.svg";
 import counselling from "@/Images/counselling.svg";
+import LearnMoreCarousel from "./LearnMoreCarousel";
 
 export default function LearnMore() {
   return (
@@ -66,39 +67,10 @@ export default function LearnMore() {
           className="absolute ml-[30px] mt-[-12px]  "
         />
       </section>
-      <section className="flex flex-col items-center justify-center gap-10">
-        <section className="flex items-center justify-center ">
-          <Image
-            src={counselling}
-            alt="counselling image"
-            className=" relative"
-          />
-          <button className="border-2 border-white text-white px-3 py-2 rounded absolute mt-[120px] hover:scale-110 transition ease-in-out duration-300">
-            KNOW MORE
-          </button>
-        </section>
-        <section className="flex items-center justify-center  ">
-          <Image
-            src={counselling}
-            alt="counselling image"
-            className=" relative"
-          />
-          <button className="border-2 border-white text-white px-3 py-2 rounded absolute mt-[120px] hover:scale-110 transition ease-in-out duration-300">
-            KNOW MORE
-          </button>
-        </section>
-        <section className="flex items-center justify-center ">
-          <Image
-            src={counselling}
-            alt="counselling image"
-            className=" relative"
-          />
-          <button className="border-2 border-white text-white px-3 py-2 rounded absolute mt-[120px] hover:scale-110 transition ease-in-out duration-300">
-            KNOW MORE
-          </button>
-        </section>
-      </section>
     </div>
+      <section className="my-10">
+       <LearnMoreCarousel/>
+      </section>
     </main>
     </>
   );

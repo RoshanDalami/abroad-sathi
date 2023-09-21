@@ -34,7 +34,7 @@ export default function Home() {
       <div className=" px-10 md:px-14 py-10  md:block ">
         <Undernewsletter />
       </div>
-      <div className=" px-14 py-10  md:block">
+      <div className=" mx-8 my-4 md:px-14 md:py-10  md:block">
         <LearnMore />
       </div>
       <div className=" md:px-14 md:py-10 mb-[-50px] md:mb-0 ">

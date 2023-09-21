@@ -1,5 +1,7 @@
-'use client'
-
+"use client";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 //module imports
 import Image from "next/image";
 //images and comp
@@ -9,13 +11,47 @@ import canadaflag from "@/Images/canadaflag.svg";
 import ukflag from "@/Images/ukflag.svg";
 import denmarkflag from "@/Images/denmarkflag.svg";
 import underline from "@/Images/underline_two.svg";
+import FlagCarousel from "./flagCarousel";
 
 export default function Topdestination() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
-
+  const data = [
+    {
+      id: 1,
+      image: ausflag,
+      title: "AUSTRALIA",
+    },
+    {
+      id: 2,
+      image: usaflag,
+      title: "USA",
+    },
+    {
+      id: 3,
+      image: canadaflag,
+      title: "CANADA",
+    },
+    {
+      id: 4,
+      image: ukflag,
+      title: "UK",
+    },
+    {
+      id: 5,
+      image: denmarkflag,
+      title: "DENMARK",
+    },
+  ];
   return (
     <>
-      <main className="hidden md:block">
+      <main className="hidden md:hidden">
         <div className="flex flex-col items-center justify-center gap-10 my-10 flex-wrap  ">
           <section>
             <Image
@@ -61,9 +97,8 @@ export default function Topdestination() {
           </section>
         </div>
       </main>
-      <main className="md:hidden">
+      <main className="">
         <div className="flex flex-col items-center justify-center gap-10 my-10  ">
-         
           <section>
             <Image
               src={underline}
@@ -74,40 +109,10 @@ export default function Topdestination() {
               TOP DESTINATIONS
             </h1>
           </section>
-          <section className="flex flex-col justify-center items-center gap-5">
-            <section>
-              <Image src={ausflag} alt="austraila flag"  />
-              <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
-                AUSTRALIA
-              </h1>
-            </section>
-            <section>
-              <Image src={usaflag} alt="United states  flag"  />
-              <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
-                USA
-              </h1>
-            </section>
-            <section>
-              <Image src={canadaflag} alt="Canada flag"  />
-              <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
-                CANADA
-              </h1>
-            </section>
-            <section>
-              <Image src={ukflag} alt="United kingdom flag" />
-              <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
-                UK
-              </h1>
-            </section>
-            <section>
-              <Image src={denmarkflag} alt="Denmark flag" />
-              <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
-                DENMARK
-              </h1>
-            </section>
-         
-          </section>
         </div>
+          <section className=" space-x-10">
+            <FlagCarousel/>
+          </section>
       </main>
     </>
   );
