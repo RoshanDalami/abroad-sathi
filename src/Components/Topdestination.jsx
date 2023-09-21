@@ -68,7 +68,7 @@ export default function Topdestination() {
             <Image
               src={underline}
               alt="underline"
-              className="absolute md:ml-[245px] mt-[45px]"
+              className="absolute ml-[170px] mt-[40px]"
             />
             <h1 className=" text-[32px] font-bold  text-[#3D3D3D]">
               TOP DESTINATIONS

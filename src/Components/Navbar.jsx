@@ -16,15 +16,31 @@ export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   const onHomeClick = () => {
     router.push("/");
+    setTimeout(()=>{
+
+      setIsMobile(false)
+    },500)
   };
   const onAboutClick = () => {
     router.push("/about");
+    setTimeout(()=>{
+
+      setIsMobile(false)
+    },500)
   };
   const onServiceClick = () => {
     router.push("/#services");
+    setTimeout(()=>{
+
+      setIsMobile(false)
+    },500)
   };
   const onBlogClick = () => {
     router.push("/blogs");
+    setTimeout(()=>{
+
+      setIsMobile(false)
+    },500)
   };
   const toggle = () => {
     setIsMobile((prevState) => !prevState);

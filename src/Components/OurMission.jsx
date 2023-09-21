@@ -39,7 +39,7 @@ export default function OurMission(){
                 <p className="text-white text-center">
                 We envision a world where every individual&apos;s educational journey is marked by clarity, purpose, and success. Our consultancy stands as a beacon of knowledge, illuminating the path towards educational excellence. By providing unparalleled guidance and resources, we aim to shape futures that are built on a solid foundation of learning and self-discovery.
                 </p>
-                <Image src={arrowtwo} alt="arrow right" className="absolute mt-[60px] ml-[-50px] "/>
+                <Image src={arrowtwo} alt="arrow right" className="absolute mt-[60px]  "/>
 
             </section>
         </div>
