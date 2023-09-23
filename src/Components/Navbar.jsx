@@ -5,6 +5,7 @@ import Link from "next/link";
 import { nanoid } from "nanoid";
 import { useRouter } from "next/navigation";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+import { NavLink } from "./NavLink";
 
 //component imports
 import Button from "./Button";
@@ -16,31 +17,27 @@ export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   const onHomeClick = () => {
     router.push("/");
-    setTimeout(()=>{
-
-      setIsMobile(false)
-    },500)
+    setTimeout(() => {
+      setIsMobile(false);
+    }, 500);
   };
   const onAboutClick = () => {
     router.push("/about");
-    setTimeout(()=>{
-
-      setIsMobile(false)
-    },500)
+    setTimeout(() => {
+      setIsMobile(false);
+    }, 500);
   };
   const onServiceClick = () => {
     router.push("/#services");
-    setTimeout(()=>{
-
-      setIsMobile(false)
-    },500)
+    setTimeout(() => {
+      setIsMobile(false);
+    }, 500);
   };
   const onBlogClick = () => {
     router.push("/blogs");
-    setTimeout(()=>{
-
-      setIsMobile(false)
-    },500)
+    setTimeout(() => {
+      setIsMobile(false);
+    }, 500);
   };
   const toggle = () => {
     setIsMobile((prevState) => !prevState);
@@ -57,14 +54,16 @@ export default function Navbar() {
           <section className="hidden md:block">
             <ul className="flex gap-7 text-[#0F42AB]">
               {[
-                ["HOME", onHomeClick],
-                ["ABOUT", onAboutClick],
-                ["SERVICES", onServiceClick],
-                ["BLOGS", onBlogClick],
-              ].map(([title, url]) => (
-                <li onClick={url} key={nanoid()} className=" cursor-pointer">
-                  {title}
-                </li>
+                ["HOME", onHomeClick,'/'],
+                ["ABOUT", onAboutClick,'/about'],
+                ["SERVICES", onServiceClick,'/#services'],
+                ["BLOGS", onBlogClick,'/blogs'],
+              ].map(([title, url,links]) => (
+                <NavLink href={links} key={nanoid()}>
+                  <li  className=" cursor-pointer">
+                    {title}
+                  </li>
+                </NavLink>
               ))}
             </ul>
           </section>
