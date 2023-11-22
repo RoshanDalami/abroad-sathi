@@ -21,28 +21,24 @@ export default function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const pathname = usePathname();
   const onHomeClick = () => {
-    router.push("/");
+    
     setTimeout(() => {
       setIsMobile(false);
     }, 500);
   };
   const onAboutClick = () => {
-    router.push("/about");
+    
     setTimeout(() => {
       setIsMobile(false);
     }, 500);
   };
   const onServiceClick = () => {
-    window.scrollTo({
-      top: 3100,
-      behavior: "smooth",
-    });
     setTimeout(() => {
       setIsMobile(false);
     }, 500);
   };
   const onBlogClick = () => {
-    router.push("/blogs");
+
     setTimeout(() => {
       setIsMobile(false);
     }, 500);
@@ -50,41 +46,14 @@ export default function Navbar() {
   const toggle = () => {
     setIsMobile((prevState) => !prevState);
   };
-  useLayoutEffect(() => {
-    function updateScrollPosition() {
-      setScrollPosition(window.pageYOffset);
-    }
-    // Add an event listener to update the scroll position on scroll
-    window.addEventListener("scroll", updateScrollPosition);
 
-    // Call the update function initially to get the initial scroll position
-    updateScrollPosition();
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", updateScrollPosition);
-    };
-  }, []);
  
-  const handleService = () => {
-    window.scrollTo({
-      top: 990,
-      behavior: "smooth",
-    });
-  };
-  
-
-  const handleHome = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+ 
   const navigation = [
-    { name: "HOME", href: "/", },
-    { name: "ABOUT", href: "/about" },
-    { name: "SERVICES", href: "/#services " },
-    { name: "BLOGS", href: "/blogs"},
+    { name: "HOME", href: "/", onClick:onHomeClick },
+    { name: "ABOUT", href: "/about", onClick:onAboutClick },
+    { name: "SERVICES", href: "/#services ",onClick:onServiceClick },
+    { name: "BLOGS", href: "/blogs",onClick:onBlogClick},
   ];
   return (
     <>
@@ -99,7 +68,7 @@ export default function Navbar() {
             <ul className="flex gap-7 text-[#0F42AB]">
               {navigation.map((item) => (
                 <Link href={item.href} key={nanoid()}>
-                  <li  className={clsx(" cursor-pointer",{'text-red-600':item.href === pathname})} onClick={item.onclick} >
+                  <li  className={clsx(" cursor-pointer",{'text-red-600':item.href === pathname})}  >
                     {item.name}
                   </li>
                 </Link>
@@ -123,11 +92,11 @@ export default function Navbar() {
         {isMobile ? (
           <div className="flex flex-col gap-4 items-end px-10 justify-center ">
             <ul className="flex flex-col gap-7 text-[#0F42AB]">
-              {navigation.map((item) => (
+            {navigation.map((item) => (
                 <Link href={item.href} key={nanoid()}>
-                <li  key={nanoid()} className=" cursor-pointer">
-                  {item.name}
-                </li>
+                  <li  className={clsx(" cursor-pointer",{'text-red-600':item.href === pathname})} onClick={item.onClick}  >
+                    {item.name}
+                  </li>
                 </Link>
               ))}
             </ul>
