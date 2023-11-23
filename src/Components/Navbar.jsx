@@ -78,7 +78,7 @@ export default function Navbar() {
           <section className="hidden md:block">
             <Link href={"/contact"}>
               <Button>CONTACT</Button>
-            </Link>
+            </Link>   
           </section>
 
           <section className=" block md:hidden" onClick={toggle}>
