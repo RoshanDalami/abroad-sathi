@@ -60,40 +60,19 @@ export default function Topdestination() {
               className="absolute md:ml-[245px] mt-[45px]"
             />
             <h1 className=" text-[32px] md:text-[40px] font-bold  text-[#3D3D3D]">
-              TOP DESTINATIONS
+              TOP DESTINATION
             </h1>
           </section>
           <section className="flex items-center justify-center gap-24 flex-wrap ">
-            <section>
-              <Image src={ausflag} alt="austraila flag" />
-              <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
-                AUSTRALIA
-              </h1>
-            </section>
-            <section>
-              <Image src={usaflag} alt="United states  flag" />
-              <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
-                USA
-              </h1>
-            </section>
+           
             <section>
               <Image src={canadaflag} alt="Canada flag" />
               <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
                 CANADA
               </h1>
             </section>
-            <section>
-              <Image src={ukflag} alt="United kingdom flag" />
-              <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
-                UK
-              </h1>
-            </section>
-            <section>
-              <Image src={denmarkflag} alt="Denmark flag" />
-              <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
-                DENMARK
-              </h1>
-            </section>
+           
+           
           </section>
         </div>
       </main>
@@ -106,7 +85,7 @@ export default function Topdestination() {
               className="absolute ml-[170px] mt-[40px]"
             />
             <h1 className=" text-[32px] font-bold  text-[#3D3D3D]">
-              TOP DESTINATIONS
+              TOP DESTINATION
             </h1>
           </section>
         </div>

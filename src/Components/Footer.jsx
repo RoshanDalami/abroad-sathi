@@ -69,11 +69,11 @@ export default function Footer(){
             <section className="flex  flex-col gap-7">
                 <div className="flex gap-4 items-center">
                     <Image src={phone} alt="phone logo"/>
-                    <p className="text-white">+977-9702036558</p>
+                    <p className="text-white">(416) 871-3059 </p>
                 </div>
                 <div className="flex gap-4 items-center">
                     <Image src={mail} alt="mail logo"/>
-                    <p className="text-white">Abraodsathi@gmail.com</p>
+                    <p className="text-white">abraodsathi@gmail.com</p>
                 </div>
                 <div className="flex gap-7 items-center">
                     <Image src={facebook} alt=""/>

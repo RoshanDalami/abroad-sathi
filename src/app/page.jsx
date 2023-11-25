@@ -15,17 +15,18 @@ export default function Home() {
     <main className="">
       <Hero />
       <div className=" bg-[#0149A5] md:mx-16 mt-8">
-
-      <AboutBanner />
+        <AboutBanner />
       </div>
-      <div id="services" >
-
-      <Weprovide />
+      <div id="services">
+        <Weprovide />
       </div>
-      <div className=" my-20 mx-10" >
+      <div className=" my-20 mx-10">
         <CardCollection />
       </div>
-      <div className="p-5 md:p-10 bg-gradient-to-t from-[#0148a538] to-white" id="topdestination">
+      <div
+        className="p-5 md:p-10 bg-gradient-to-t from-[#0148a538] to-white"
+        id="topdestination"
+      >
         <Topdestination />
       </div>
       <div className=" px-5 py-10 md:px-14 md:py-16  md:block">

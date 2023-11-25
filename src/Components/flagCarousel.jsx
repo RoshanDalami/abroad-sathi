@@ -11,63 +11,41 @@ import canadaflag from "@/Images/canadaflag.svg";
 import ukflag from "@/Images/ukflag.svg";
 import denmarkflag from "@/Images/denmarkflag.svg";
 
-export default function FlagCarousel(){
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      };
-      const data = [
-        {
-          id: 1,
-          image: ausflag,
-          title: "AUSTRALIA",
-        },
-        {
-          id: 2,
-          image: usaflag,
-          title: "USA",
-        },
-        {
-          id: 3,
-          image: canadaflag,
-          title: "CANADA",
-        },
-        {
-          id: 4,
-          image: ukflag,
-          title: "UK",
-        },
-        {
-          id: 5,
-          image: denmarkflag,
-          title: "DENMARK",
-        },
-      ];
-return(
+export default function FlagCarousel() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+  };
+  const data = [
+    {
+      id: 3,
+      image: canadaflag,
+      title: "CANADA",
+    },
+  ];
+  return (
     <main className="mx-2 ">
-        <div>
-        <section  className="" >
-            <Slider {...settings}>
-              {data.map((item) => {
-                return(
-                    <div key={item.id} >
-
-                <section >
-                  <Image src={item.image} alt="austraila flag"/>
-                  <h1 className="text-[28px] text-center  mt-3 font-bold text-[#3D3D3D]">
-                    {item.title}
-                  </h1>
-                </section>
-                    </div>
-                )
-              })}
-            </Slider>
-          </section>
+      <div>
+        <section className="">
        
-        </div>
+            {data.map((item) => {
+              return (
+                <div key={item.id}>
+                  <section className="flex flex-col items-center">
+                    <Image src={item.image} alt="austraila flag" />
+                    <h1 className="text-[28px] text-center  mt-3 font-bold text-[#3D3D3D]">
+                      {item.title}
+                    </h1>
+                  </section>
+                </div>
+              );
+            })}
+       
+        </section>
+      </div>
     </main>
-)
+  );
 }
