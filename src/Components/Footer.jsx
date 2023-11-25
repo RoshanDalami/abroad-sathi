@@ -36,7 +36,7 @@ export default function Footer(){
 
         <div className="bg-[#034AA4] flex flex-col md:flex-row md:items-center justify-center px-8 py-20 gap-14 md:gap-20">
             <section className="flex items-center justify-center">
-            <Image src={footerlogo} alt="footer_logo" />
+            <Image src={footerlogo} alt="footer_logo" loading="lazy" />
             </section>
 
 
@@ -68,7 +68,7 @@ export default function Footer(){
 
             <section className="flex  flex-col gap-7">
                 <div className="flex gap-4 items-center">
-                    <Image src={phone} alt="phone logo"/>
+                    <Image src={phone} alt="phone logo" loading="lazy" />
                     <p className="text-white">(416) 871-3059 </p>
                 </div>
                 <div className="flex gap-4 items-center">
@@ -76,9 +76,9 @@ export default function Footer(){
                     <p className="text-white">abraodsathi@gmail.com</p>
                 </div>
                 <div className="flex gap-7 items-center">
-                    <Image src={facebook} alt=""/>
-                    <Image src={instagram} alt=""/>
-                    <Image src={linkedin} alt=""/>
+                    <Image src={facebook} alt="" loading="lazy"/>
+                    <Image src={instagram} alt="" loading="lazy"/>
+                    <Image src={linkedin} alt="" loading="lazy"/>
                 </div>
             </section>
         </div>

@@ -12,7 +12,7 @@ export default function Hero() {
         <h1 className="text-[52px] font-light text-[#3D3D3D]">
           Your 
           <span className=" hidden md:inline ">
-            <Image src={underline} alt="underline" className="absolute ml-[300px] mt-[-20px]"/>
+            <Image src={underline} alt="underline" className="absolute ml-[300px] mt-[-20px]" loading="lazy" />
           </span>
           <span className="text-[#F22D36] font-bold">
             {''} Success Journey
@@ -23,7 +23,7 @@ export default function Hero() {
         <button className="bg-[#0149A5] px-3 py-2 rounded text-white mt-5 hover:scale-110 transition ease-in-out duration-300">LEARN MORE</button>
       </section>
       <section>
-        <Image src={HerosectionImage} alt="girl holding books"/>
+        <Image src={HerosectionImage} alt="girl holding books" loading="lazy"/>
       </section>
     </div>
     <div className="flex items-center mt-16 mx-5 flex-wrap gap-6 justify-center md:hidden ">
@@ -31,7 +31,7 @@ export default function Hero() {
         <h1 className="text-[36px] font-light text-[#3D3D3D] text-center ">
           Your <br/>
           <span className=" inline ">
-            <Image src={underline} alt="underline" className="absolute ml-[180px] mt-[40px] " width={150} />
+            <Image src={underline} alt="underline" className="absolute ml-[180px] mt-[40px] " width={150} loading="lazy" />
           </span>
           <span className="text-[#F22D36] font-bold">
             {''} Success Journey
@@ -42,7 +42,7 @@ export default function Hero() {
         <button className="bg-[#0149A5] px-3 py-2 rounded text-white hover:scale-110 transition ease-in-out duration-300  ">LEARN MORE</button>
       </section>
       <section>
-        <Image src={HerosectionImage} alt="girl holding books"/>
+        <Image src={HerosectionImage} alt="girl holding books" loading="lazy"/>
       </section>
     </div>
     </>

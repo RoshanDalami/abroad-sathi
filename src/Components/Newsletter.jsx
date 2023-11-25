@@ -11,7 +11,7 @@ export default function Newsletter() {
       <main className="hidden md:block">
         <div className="border-2 border-[#0149A5] rounded flex items-center justify-between ">
           <section>
-            <Image src={newsletter} alt="" width={600} height={300} />
+            <Image src={newsletter} alt="" width={600} height={300} loading="lazy" />
           </section>
           <section className=" px-16 max-w-5xl ">
             <div>
@@ -22,6 +22,7 @@ export default function Newsletter() {
                 src={underline}
                 className="absolute ml-[530px] mt-[-10px]"
                 alt="underline "
+                loading="lazy"
               />
             </div>
             <p className="text-[28px] text-[#3D3D3D]">
@@ -55,6 +56,7 @@ export default function Newsletter() {
                 src={underline}
                 className="absolute ml-[50px] mt-[-10px] "
                 alt="underline  "
+                loading="lazy"
               />
             </div>
             <p className="text-[20px] text-[#3D3D3D] mb-6 text-left">
@@ -76,7 +78,7 @@ export default function Newsletter() {
             </form>
           </section>
           <section>
-            <Image src={newsletter} alt="" />
+            <Image src={newsletter} alt="" loading="lazy" />
           </section>
         </div>
       </main>

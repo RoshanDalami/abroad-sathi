@@ -12,7 +12,7 @@ export default function BlogHero(){
                     <h1 className="text-[28px]">How to Choose the Right College Major: Tips and Advice</h1>
 
                 </div>
-                <Image src={banner} alt="saminar" className=""   />
+                <Image src={banner} alt="saminar" className="" loading="lazy"   />
             </div>
         </main>
     )

@@ -19,6 +19,7 @@ export default function LearnMore() {
           src={underline}
           alt="underline "
           className="absolute ml-[330px] mt-[-20px] "
+          loading="lazy"
         />
       </section>
       <section className="flex gap-10">
@@ -27,6 +28,7 @@ export default function LearnMore() {
             src={counselling}
             alt="counselling image"
             className=" relative"
+            loading="lazy"
           />
           <button className="border-2 border-white text-white px-3 py-2 rounded absolute mt-[170px] hover:scale-110 transition ease-in-out duration-300">
             KNOW MORE
@@ -37,6 +39,7 @@ export default function LearnMore() {
             src={counselling}
             alt="counselling image"
             className=" relative"
+            loading="lazy"
           />
           <button className="border-2 border-white text-white px-3 py-2 rounded absolute mt-[170px] hover:scale-110 transition ease-in-out duration-300">
             KNOW MORE
@@ -47,6 +50,7 @@ export default function LearnMore() {
             src={counselling}
             alt="counselling image"
             className=" relative"
+            loading="lazy"
           />
           <button className="border-2 border-white text-white px-3 py-2 rounded absolute mt-[170px] hover:scale-110 transition ease-in-out duration-300">
             KNOW MORE
@@ -65,6 +69,7 @@ export default function LearnMore() {
           src={underline}
           alt="underline "
           className="absolute ml-[30px] mt-[-12px]  "
+          loading="lazy"
         />
       </section>
     </div>

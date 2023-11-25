@@ -18,6 +18,7 @@ export default function Undernewsletter(){
                 src={underline}
                 alt="underline svg"
                 className="absolute ml-[480px] mt-[-20px]"
+                loading="lazy"
               />
               <p className="text-[28px] text-[#3D3D3D] font-semibold">
                 Choose us for Unrivaled Expertise & Results
@@ -37,7 +38,7 @@ export default function Undernewsletter(){
               </p>
             </section>
             <section>
-              <Image src={undernewsletter} alt="image of girl holding book" />
+              <Image src={undernewsletter} alt="image of girl holding book" loading="lazy" />
             </section>
           </div>
         </main>
@@ -51,6 +52,7 @@ export default function Undernewsletter(){
                 src={underline}
                 alt="underline svg"
                 className="absolute ml-[50px] mt-[-10px] "
+                loading="lazy"
               />
               <p className="text-[20px] text-[#3D3D3D] font-medium mb-2">
                 Choose us for Unrivaled Expertise & Results
@@ -70,7 +72,7 @@ export default function Undernewsletter(){
               </p>
             </section>
             <section>
-              <Image src={undernewsletter} alt="image of girl holding book" />
+              <Image src={undernewsletter} alt="image of girl holding book" loading="lazy" />
             </section>
           </div>
         </main>

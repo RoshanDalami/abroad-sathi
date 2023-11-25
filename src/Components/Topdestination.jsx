@@ -58,6 +58,7 @@ export default function Topdestination() {
               src={underline}
               alt="underline"
               className="absolute md:ml-[245px] mt-[45px]"
+              loading="lazy"
             />
             <h1 className=" text-[32px] md:text-[40px] font-bold  text-[#3D3D3D]">
               TOP DESTINATION
@@ -66,7 +67,7 @@ export default function Topdestination() {
           <section className="flex items-center justify-center gap-24 flex-wrap ">
            
             <section>
-              <Image src={canadaflag} alt="Canada flag" />
+              <Image src={canadaflag} alt="Canada flag" loading="lazy" />
               <h1 className="text-[28px] text-center mt-3 font-bold text-[#3D3D3D]">
                 CANADA
               </h1>
@@ -83,6 +84,7 @@ export default function Topdestination() {
               src={underline}
               alt="underline"
               className="absolute ml-[170px] mt-[40px]"
+              loading="lazy"
             />
             <h1 className=" text-[32px] font-bold  text-[#3D3D3D]">
               TOP DESTINATION

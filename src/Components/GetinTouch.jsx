@@ -43,6 +43,7 @@ export default function GetInTouch() {
               src={underline}
               alt="underline"
               className="absolute mt-[50px] md:mt-[50px] md:ml-[150px]"
+              loading="lazy"
             />
             <p className="text-[28px] text-[#3D3D3D]">
               We would love to hear from you.
@@ -122,7 +123,7 @@ export default function GetInTouch() {
             </button>
           </section>
           <section className="hidden md:block">
-            <Image src={getintouch} alt="get in touch image" />
+            <Image src={getintouch} alt="get in touch image" loading="lazy" />
           </section>
         </div>
       </main>
@@ -136,6 +137,7 @@ export default function GetInTouch() {
               src={underline}
               alt="underline"
               className="absolute mt-[35px] ml-[100px]"
+              loading="lazy"
             />
             <p className="text-[20px] text-[#3D3D3D]">
               We would love to hear from you.
@@ -215,7 +217,7 @@ export default function GetInTouch() {
             </button>
           </section>
           <section className="flex">
-            <Image src={mobileGetInTouch} alt="get in touch image"/>
+            <Image src={mobileGetInTouch} alt="get in touch image" loading="lazy" />
           </section>
         </div>
       </main>

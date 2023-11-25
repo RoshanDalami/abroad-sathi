@@ -28,7 +28,7 @@ export default function BlogPage(){
         <main className="md:hidden ">
             <div className="flex items-center justify-center">
 
-            <Image src={counselling} alt="" className="px-8 pt-3"  />
+            <Image src={counselling} alt="" className="px-8 pt-3" loading="lazy"  />
             </div>
             <BlogPara/>
             <div className="mx-4 my-3">

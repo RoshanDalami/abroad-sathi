@@ -11,8 +11,8 @@ export default function AboutBanner(){
     return(
         <div className="  mx-10 mb-10 py-10  md:p-16 flex gap-4 flex-col ">
             <section className="">
-            <Image src={underlinetwo} alt='underline' className='absolute ml-[550px] mt-[42px] hidden md:inline  '/>
-            <h1 className="text-center text-[32px] md:text-[40px] font-semibold text-white">
+            <Image src={underlinetwo} alt='underline' className='absolute ml-[550px] mt-[42px] hidden md:inline  ' loading='lazy' />
+            <h1 className="text-center text-[32px] md:text-[40px] font-semibold text-white"  >
 
             ABOUT US
             </h1>

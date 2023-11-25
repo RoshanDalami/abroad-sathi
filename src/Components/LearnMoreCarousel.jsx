@@ -36,7 +36,7 @@ export default function LearnMoreCarousel() {
         {data.map((item) => {
           return (
             <section key={item.id}>
-              <Image src={item.image} alt="counselling image" className=" " />
+              <Image src={item.image} alt="counselling image" className=" " loading="lazy" />
               <button className="text-white border-2 border-white px-5 py-2 rounded-md absolute mt-[-80px] ml-[80px] ">
                 {item.butttonTitle}
               </button>
