@@ -12,7 +12,7 @@ import Undernewsletter from "@/Components/underNewsletter";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className=" ">
       <Hero />
       <div className=" bg-[#0149A5] md:mx-16 mt-8">
         <AboutBanner />

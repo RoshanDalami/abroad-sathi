@@ -9,11 +9,11 @@ export default function Newsletter() {
   return (
     <>
       <main className="hidden md:block">
-        <div className="border-2 border-[#0149A5] rounded flex items-center justify-between ">
-          <section>
+        <div className="border-2 border-[#0149A5] rounded-lg flex items-center justify-between ">
+          <section className="  "  >
             <Image src={newsletter} alt="" width={600} height={300} loading="lazy" />
           </section>
-          <section className=" px-16 max-w-5xl ">
+          <section className=" px-16 max-w-5xl py-8  ">
             <div>
               <h1 className="text-[40px] font-bold text-[#3D3D3D]">
                 SUBSCRIBE TO OUR NEWSLETTER
@@ -45,8 +45,8 @@ export default function Newsletter() {
           </section>
         </div>
       </main>
-      <main className="md:hidden">
-        <div className="border-2 border-[#0149A5] rounded flex items-center justify-between flex-wrap gap-8">
+      <main className="  md:hidden">
+        <div className="border-2 border-[#0149A5] rounded flex items-center justify-between  gap-8">
           <section className="px-5">
             <div className="mb-[20px]">
               <h1 className="text-[28px] font-bold text-[#3D3D3D]">

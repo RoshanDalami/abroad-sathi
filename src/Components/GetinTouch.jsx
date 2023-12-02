@@ -128,8 +128,8 @@ export default function GetInTouch() {
         </div>
       </main>
       <main className=" mt-5 md:hidden">
-        <div className="flex items-center justify-center md:justify-between  bg-[#F3F3F3] bg-gradient-to-t from-[#0148a52c] to-white  flex-wrap">
-          <section className="flex flex-col gap-3 mx-5">
+        <div className="flex flex-col items-center  md:justify-between  bg-[#F3F3F3] bg-gradient-to-t from-[#0148a52c] to-white  ">
+          <section className="flex flex-col gap-3 w-full px-5">
             <h1 className="text-[32px] text-[#3D3D3D] font-bold">
               GET IN TOUCH
             </h1>
