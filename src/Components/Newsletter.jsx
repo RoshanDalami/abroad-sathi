@@ -46,7 +46,7 @@ export default function Newsletter() {
         </div>
       </main>
       <main className="  md:hidden">
-        <div className="border-2 border-[#0149A5] rounded flex items-center justify-between  gap-8">
+        <div className="border-2 border-[#0149A5] rounded-lg flex flex-col  items-center justify-between  gap-8">
           <section className="px-5">
             <div className="mb-[20px]">
               <h1 className="text-[28px] font-bold text-[#3D3D3D]">
